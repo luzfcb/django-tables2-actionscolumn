@@ -1,0 +1,17 @@
+{% if detail_view_url_resolved %}
+    <a href="{% url detail_view_url_resolved record.pk %}" class="btn btn-default">
+        <span class="glyphicon glyphicon-">Detail</span>
+    </a>
+{% endif %}
+
+{% if update_view_url_resolved %}
+    <a href="{% url update_view_url_resolved record.pk %}" class="btn btn-warning">
+        <span class="glyphicon glyphicon-edit">Detail</span>
+    </a>
+{% endif %}
+
+{% if detail_view_url_resolved %}
+    <a href="{% url delete_view_url_resolved record.pk %}" class="btn btn-danger">
+        <span class="glyphicon glyphicon-remove">Remove</span>
+    </a>
+{% endif %}
